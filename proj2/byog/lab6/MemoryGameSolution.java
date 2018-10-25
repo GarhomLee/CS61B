@@ -19,12 +19,13 @@ public class MemoryGameSolution {
                                                    "Too easy for you!", "Wow, so impressive!"};
 
     public static void main(String[] args) {
-        if (args.length < 1) {
+        /*if (args.length < 1) {
             System.out.println("Please enter a seed");
             return;
-        }
+        }*/
 
-        long seed = Long.parseLong(args[0]);
+        //int seed = Integer.parseInt(args[0]);
+        int seed = 10;
         MemoryGameSolution game = new MemoryGameSolution(40, 40, seed);
         game.startGame();
     }
@@ -70,6 +71,7 @@ public class MemoryGameSolution {
             }
         }
     }
+
 
     public String generateRandomString(int n) {
         StringBuilder sb = new StringBuilder();
